@@ -1,0 +1,185 @@
+html, body {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 0px solid black;
+  border-radius: 50%;
+  top: -250px;
+  left: -251px;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.burger {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger > a {
+  display: inline-block;
+  position: absolute;
+  border: 0px solid black;
+  width: 250px;
+  height: 125px;
+  text-transform: uppercase;
+  font-size: 3em;
+  transform: skewX(62deg);
+  transform-origin: left top;
+  color: black;
+  background-color: #edeeef;
+}
+
+.burger a:nth-of-type(1) {
+  transform: rotate(-90deg) skewX(60deg);
+  transition: transform 0.3s linear 0.6s;
+}
+
+.burger a:nth-of-type(2) {
+  transform: rotate(-60deg) skewX(60deg);
+  transition: transform 0.3s linear 0.3s;
+}
+
+.burger a:nth-of-type(3) {
+  transform: rotate(-30deg) skewX(60deg);
+  transition: transform 0.3s linear;
+}
+
+.point1, .point2, .point3 {
+  display: inline-block;
+}
+
+.point1 {
+  transform: skewX(-60deg) rotate(18deg) translateX(80px) translateY(-25px);
+}
+
+.point2 {
+  transform: skewX(-60deg) rotate(15deg) translateX(80px) translateY(-15px);
+}
+
+.point3 {
+  transform: skewX(-60deg) rotate(17deg) translateX(80px) translateY(-10px);
+}
+
+.burger a:nth-of-type(1), .burger a:nth-of-type(2) {
+  font-size: 3em;
+}
+
+.burger a:nth-of-type(3) {
+  font-size: 3em;
+}
+
+.menu::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 0px solid #edeeef;
+  border-radius: 50%;
+  top: 150px;
+  right: 150px;
+  background-color: #272727;
+  z-index: 2;
+  font-size: 5em;
+  font-weight: bold;
+  transform: rotate(90deg);
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.menu::after {
+  content: '|||';
+  font-size: 5em;
+  font-weight: bold;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 240px;
+  left: 270px;
+  z-index: 2;
+  color: #edeeef;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="button"] {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 2000;
+  top: 150px;
+  right: 150px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .burger a:nth-of-type(1) {
+  transform: rotate(0deg) skewX(60deg);
+}
+
+input[type="checkbox"]:checked ~ .burger a:nth-of-type(2) {
+  transform: rotate(30deg) skewX(60deg);
+}
+
+input[type="checkbox"]:checked ~ .burger a:nth-of-type(3) {
+  transform: rotate(60deg) skewX(60deg);
+}
+
+input[type="checkbox"]:checked ~ .cross {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.burger a:nth-of-type(1):hover,
+.burger a:nth-of-type(2):hover,
+.burger a:nth-of-type(3):hover {
+  animation-name: special-effect;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes special-effect {
+  to {
+    color: red;
+    text-shadow: 0px 0px 5px red;
+    box-shadow: 0px 0px 5px 0px black;
+    z-index: 1;
+  }
+}
+
+.cross {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #272727;
+  z-index: 3;
+  border-radius: 50%;
+  top: 150px;
+  left: 150px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cross:after {
+  content: '+';
+  display: inline-block;
+  position: absolute;
+  color: red;
+  font-size: 9em;
+  transform: rotate(45deg);
+  top: 55px;
+  left: 97px;
+  z-index: 1 ;
+}

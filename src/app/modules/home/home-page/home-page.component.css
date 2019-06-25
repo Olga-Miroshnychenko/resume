@@ -1,0 +1,154 @@
+.image-container{
+  z-index: 500;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  top: 0;
+}
+
+.cover-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  background-size: cover;
+}
+h1 {
+width: 100%;
+position: absolute;
+text-align: center;
+color: whitesmoke;
+z-index: 1000;
+top: 30%;
+margin: 0 auto;
+white-space: nowrap;
+font-weight: 800;
+font-style: normal;
+font-size: 50px;
+  left: 58%;
+  transform: translate(-58%,-58%);
+}
+.rev-block {
+  position: absolute;
+}
+
+.rev-block span {
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.rev-block:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #272727;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+
+@keyframes rev-block {
+
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+
+}
+
+@keyframes appear-text {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+#onemore {
+  top: 45%;
+  left: 58%;
+}
+
+#onemore span {
+  animation-delay: 2s;
+}
+
+#onemore.rev-block:after {
+  background: #edeeef;
+  animation-delay: 1.4s;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+    padding: 0.4em;
+  }
+}
+
+span {
+  color:white;
+  text-shadow:
+    1px 1px 0px #DCDCDC,
+    2px 2px 0px #D3D3D3,
+    3px 3px 0px #D3D3D3,
+    4px 4px 0px #C0C0C0,
+    5px 5px 0px #A9A9A9,
+    6px 6px 0px #A9A9A9,
+    7px 7px 0px #808080,
+    8px 8px 0px #808080	,
+    9px 9px 0px #696969,
+    10px 10px 0px #696969,
+    15px 15px 25px rgba(0,0,0,.9);
+  transition: .5s ease-in-out;
+}
+
+span:hover {
+  left:20px;
+  text-shadow:
+    -1px 1px 0px #696969,
+    -2px 2px 0px #696969,
+    -3px 3px 0px #808080,
+    -4px 4px 0px #808080,
+    -5px 5px 0px #A9A9A9,
+    -6px 6px 0px #A9A9A9,
+    -7px 7px 0px #C0C0C0,
+    -8px 8px 0px #D3D3D3,
+    -9px 9px 0px #D3D3D3,
+    -10px 10px 0px #DCDCDC,
+    -15px 15px 25px rgba(0,0,0,.9);
+}
+#backshape {
+  display:block;
+  float:left;
+  width:100%;
+  transform:skew(0deg,-5deg);
+  -ms-transform:skew(0deg,-10deg);
+  -webkit-transform:skew(0deg,-5deg);
+  z-index:1;
+  margin-top:-100px;
+
+}

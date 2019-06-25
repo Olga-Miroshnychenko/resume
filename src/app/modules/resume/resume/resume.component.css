@@ -1,0 +1,288 @@
+.container {
+  width: 100%;
+  left: 0;
+  top: 0;
+  float: right;
+}
+.text-box {
+  width: 22%;
+  margin: 2% 2% 1% 2%;
+  float: left;
+  height:auto;
+  overflow: hidden;
+}
+.text-box2 {
+  width: 26%;
+  margin: 2% 2% 1%;
+  float: left;
+  height: auto;
+}
+.exp-container{
+  width: 40%;
+  margin: 2% 2% 1%;
+  float:right;
+  height: 170px;
+}
+.experience{
+  float:left;
+  height: auto;
+  width: 26%;
+  margin: 2% 2% 1% 28% ;
+}
+.text-line-4 {
+  font-size: 17px;
+  color: rgba(26,26,26,.75);
+  position: center;
+  margin-left: 130px;
+  padding:0;
+  font-family: Arial;
+  font-weight: 100;
+  animation: showText 1.5s 1 forwards ease-in;
+}
+ul li {
+  padding-bottom: 8px;
+}
+.name-school {
+  width: 26%;
+  margin: 2% 2% 1% 2%;
+  float: left;
+  height:auto;
+}
+.name-school h3{
+  margin-left: 9%;
+  text-align: left;
+}
+.text-line {
+  color: rgba(26,26,26,.75);
+  transition: 0.5s;
+  transform: translateY(100%);
+  top: 0;
+  position: center;
+}
+.text-line-1 {
+  color: rgba(26,26,26,.75);
+  font-family: Arial;
+  margin-top: 3%;
+  font-weight: 100;
+  text-align: center;
+  animation: showText 1.5s 1 forwards ease-in;
+}
+.text-line-3 {
+  color: rgba(26,26,26,.75);
+  font-family: Arial;
+  font-weight: 100;
+  text-align: center;
+  animation: showText 1.5s 1 forwards ease-in;
+  position: center;
+}
+h3{
+  text-align: center;
+  position: center;
+}
+
+@keyframes showText {
+  0% {
+    transform: translateY(100%);
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+
+  }
+}
+
+.smoke ul:hover li {
+  animation: smoke 2s linear forwards;
+}
+
+
+@keyframes smoke {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter:blur(1px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter:blur(20px);
+  }
+}
+
+.smoke ul li:nth-child(1){
+  animation-delay:0s
+}
+.smoke ul li:nth-child(2){
+  animation-delay:.4s
+}
+.smoke ul li:nth-child(3){
+  animation-delay:.8s
+}
+.smoke ul li:nth-child(4){
+  animation-delay:1.2s
+}
+.smoke ul li:nth-child(5){
+  animation-delay:1.6s
+}
+.smoke ul li:nth-child(6){
+  animation-delay:2.0s
+}
+.smoke ul li:nth-child(7){
+  animation-delay:2.4s
+}
+.smoke ul li:nth-child(8){
+  animation-delay:2.8s
+}
+.smoke ul li:nth-child(9){
+  animation-delay:3.0s
+}
+
+
+a {
+  color: #272727;
+}
+
+.rollover {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+span {
+  display: block;
+  padding: 0 2px;
+  transition: all 900ms ease;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+
+*:hover span {
+   background-color: #272727;
+   transform: rotateX(90deg);
+ }
+
+span:after {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 2px;
+  background-color: #272727;
+  color: whitesmoke;
+  transform-origin: 50% 0;
+  transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+.exp-icon {
+  width: 100%;
+  position: relative;
+}
+
+.exp-icon li {
+  padding: 0;
+  list-style: none;
+  float: left;
+  margin: 0px 10px 10px 10px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #edeeef;
+  border-radius: 50%;
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  color: #262626;
+  z-index: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out
+}
+
+.exp-icon li:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #ccc;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out
+}
+
+.exp-icon li:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(.95);
+  top: 0
+}
+
+.exp-icon li:nth-child(1):before {
+  background: #cd201f;
+
+}
+
+.exp-icon li:nth-child(2):before {
+  background: #0077B5;
+
+}
+
+.exp-icon li:nth-child(3):before {
+  background: #FFFC00;
+
+}
+
+.exp-icon li:nth-child(4):before {
+  background: red;
+
+}
+
+.exp-icon li:nth-child(5):before {
+  background: #410093;
+
+}
+
+.exp-icon li:nth-child(6):before {
+  background: darkorchid;
+
+}
+
+.exp-icon li:nth-child(7):before {
+  background: #007ee5;
+
+}
+
+.exp-icon li:nth-child(8):before {
+  background: #21759b;
+
+}
+
+.exp-icon li:nth-child(9):before {
+  background: #410093;
+
+}
+
+.exp-icon li:nth-child(10):before {
+  background: #dd4b39;
+
+}
+
+.exp-icon li:nth-child(11):before {
+  background: #25D366;
+
+}
+.exp-icon li:nth-child(12):before {
+  background: #191919;
+
+}
+.exp-icon li:hover {
+  color: white
+}

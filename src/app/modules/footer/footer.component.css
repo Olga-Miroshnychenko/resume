@@ -1,0 +1,255 @@
+
+.contacts {
+  background-color: #272727;
+  width: 100%;
+  z-index: 1000;
+  height: 250px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.icon {
+  background-color: #edeeef;
+  z-index: 2000;
+  width: 35px;
+  border-radius: 8px;
+  fill: transparent;
+}
+.button-contact:hover .contacts {
+  display: inline;
+  background-color: #272727;
+  width: 100%;
+  z-index: 1000;
+  height: 300px;
+  position: relative;
+  float: left;
+}
+.navbar {
+  color: whitesmoke;
+  z-index: 1000;
+  text-align: center;
+  height: 82.5px;
+  /*padding: 10px auto;*/
+  margin-bottom: 0px;
+}
+.navbar li {
+  color: whitesmoke;
+  list-style-type: none;
+  text-align: center;
+  z-index: 1000;
+  display: inline-block;
+  /*margin: 30px 40px 30px auto;*/
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .10em;
+  line-height: 82.5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  /*padding: .4em 1.2em;*/
+
+}
+.navbar-item {
+  font-family: Arial,Helvetica,sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+  z-index: 1000;
+  font-size: 15px;
+  padding-right: 7px;
+}
+.rights {
+  margin:0;
+  font-size: 15px;
+  height: 60px;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  vertical-align: middle;
+}
+p {
+  margin:0 auto;
+  font-size: 15px;
+  padding: 15px 0;
+
+}
+
+.icon-container {
+  position: center;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+
+
+body {
+  background: #333;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/*SOCIAL BUTTONS DROP*/
+
+.wrap {
+  text-align: center;
+
+}
+
+.social-container {
+  padding-top: 26px;
+  height: 101px;
+}
+.social-icon {
+  font-size: 2em;
+  text-align: center;
+  width: 4em;
+  height: 2em;
+  padding: 0.5em 0;
+  margin: 0;
+  display: inline-block;
+}
+#envelope {
+  border-top: 5px solid #d93025;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #000),
+    color-stop(50%, #d93025)
+  );
+  background-image: linear-gradient(to bottom, #000 50%, #d93025 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(0, 0, 0, 0)),
+    color-stop(50%, #d93025)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #d93025 50%
+  );
+  -webkit-transition: background-position 0.25s;
+  transition: background-position 0.25s;
+}
+#envelope:hover {
+  background-position: 0 -100%;
+}
+#facebook {
+  border-top: 5px solid #3a5795;
+  margin-left: -4px;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #000),
+    color-stop(50%, #3a5795)
+  );
+  background-image: linear-gradient(to bottom, #000 50%, #3a5795 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(0, 0, 0, 0)),
+    color-stop(50%, #3a5795)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #3a5795 50%
+  );
+  -webkit-transition: background-position 0.25s;
+  transition: background-position 0.25s;
+}
+#facebook:hover {
+  background-position: 0 -100%;
+}
+#linkedin {
+  border-top: 5px solid #0073b1;
+  margin-left: -4px;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #000),
+    color-stop(50%, #0073b1)
+  );
+  background-image: linear-gradient(to bottom, #000 50%, #0073b1 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(0, 0, 0, 0)),
+    color-stop(50%, #0073b1)
+  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #0073b1 50%);
+  -webkit-transition: background-position 0.25s;
+  transition: background-position 0.25s;
+}
+#linkedin:hover {
+  background-position: 0 -100%;
+}
+#instagram {
+  border-top: 5px solid #d047d1;
+  margin-left: -4px;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #000),
+    color-stop(50%, #d047d1)
+  );
+  background-image: linear-gradient(to bottom, #000 50%, #d047d1 50%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, rgba(0, 0, 0, 0)),
+    color-stop(50%, #d047d1)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #d047d1 50%
+  );
+  -webkit-transition: background-position 0.25s;
+  transition: background-position 0.25s;
+}
+#instagram:hover {
+  background-position: 0 -100%;
+}
+.fa-facebook,
+.fa-envelope,
+.fa-linkedin {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari and Chrome */
+  -o-transform: rotate(0deg); /* Opera */
+  -moz-transform: rotate(0deg); /* Firefox */
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fa-facebook:hover,
+.fa-envelope:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari and Chrome */
+  -o-transform: rotate(360deg); /* Opera */
+  -moz-transform: rotate(360deg); /* Firefox */
+  transform: rotate(360deg);
+  transition: all 0.3s;
+}
+
+a {
+  color: white;
+  text-decoration:none;
+  padding-right: 4px;
+}
