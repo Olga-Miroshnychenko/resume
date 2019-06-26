@@ -9,10 +9,11 @@ const routes: Routes = [
   { path: 'home', component: HomePageComponent  },
   { path: 'about', component: AboutMeComponent  },
   { path: 'contact', component: ContactComponent  }
-
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration: 'enabled',
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
