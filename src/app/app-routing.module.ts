@@ -6,7 +6,7 @@ import { ContactComponent } from "./modules/contact/contact.component";
 
 const routes: Routes = [
   { path: '', component: HomePageComponent  },
-  { path: 'portfolio', component: HomePageComponent  },
+  { path: 'home', component: HomePageComponent  },
   { path: 'about', component: AboutMeComponent  },
   { path: 'contact', component: ContactComponent  }
 

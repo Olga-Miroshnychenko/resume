@@ -68,7 +68,7 @@ html, body {
 }
 
 .point3 {
-  transform: skewX(-60deg) rotate(17deg) translateX(80px) translateY(-10px);
+  transform: skewX(-60deg) rotate(20deg) translateX(80px) translateY(-10px);
 }
 
 .burger a:nth-of-type(1), .burger a:nth-of-type(2) {
