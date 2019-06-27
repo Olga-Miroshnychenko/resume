@@ -107,7 +107,19 @@ html, body {
   z-index: 2;
   color: #edeeef;
 }
-
+@media screen and (max-width: 650px){
+  .menu::after {
+    content: '|||';
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 240px;
+    left: 270px;
+    z-index: 2;
+    color: #edeeef;
+  }
+}
 input[type="checkbox"] {
   display: none;
 }
