@@ -110,12 +110,12 @@ html, body {
 @media screen and (max-width: 650px){
   .menu::after {
     content: '|||';
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     transform: rotate(45deg);
     position: absolute;
-    top: 240px;
-    left: 270px;
+    top: 250px;
+    left: 250px;
     z-index: 2;
     color: #edeeef;
   }
