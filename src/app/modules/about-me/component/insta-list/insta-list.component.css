@@ -169,8 +169,7 @@ overflow: hidden;
 .name-item{
   width: 97%;
   height: 16vh;
-  margin: 3% 2% 3% 2%;
-  padding-bottom: 3%;
+  padding: 3% 2% 3% 2%;
   border-bottom: 5px dotted #272727;
 
 }
@@ -213,7 +212,7 @@ ul {
     margin: 0%;
   }
   .name-item{
-    height: 19vh;
+    height: 17vh;
 
   }
 }
@@ -225,7 +224,7 @@ ul {
     margin: 0%;
   }
   .name-item{
-    height: 19vh;
+    height: 17vh;
 
   }
 }

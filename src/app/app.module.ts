@@ -15,12 +15,14 @@ import { InstaListComponent } from './modules/about-me/component/insta-list/inst
 import { ContactComponent } from './modules/contact/contact.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     InstaListComponent,
     ContactComponent,
+
   ],
   imports: [
     BrowserModule,
